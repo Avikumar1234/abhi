@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import './App.css'; // Importing CSS file for styling
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      <header className="header">
+        <div className="container">
+          <h1>Welcome to Our Amazing Service</h1>
+          <p>Get started with us and experience excellence!</p>
+          <button className="cta-button">Get Started</button>
+        </div>
+      </header>
+
+      <section className="about-section">
+        <div className="container">
+          <h2>About Us</h2>
+          <p>We provide top-notch services to help you succeed. Our goal is to deliver the best solutions tailored to your needs.</p>
+        </div>
+      </section>
+
+      <section className="cta-section">
+        <div className="container">
+          <h2>Ready to Transform Your Business?</h2>
+          <button className="cta-button">Sign Up Now</button>
+        </div>
+      </section>
+
+      <footer className="footer">
+        <div className="container">
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  );
 }
 
-export default App
+export default App;
